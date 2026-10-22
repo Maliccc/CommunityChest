@@ -1,0 +1,19 @@
+name: CommunityChest
+version: 1.0.0
+main: com.bombgoboom.communitychest.CommunityChestPlugin
+api-version: '26.3'
+description: A shared 108-slot chest anyone can open and only mods can break.
+author: BombGoBoom
+commands:
+  community_chest:
+    description: Give out Community Chests
+    usage: /community_chest give [player] [amount]
+    aliases: [cchest]
+    permission: communitychest.give
+permissions:
+  communitychest.give:
+    description: Lets you give out Community Chests
+    default: op
+  communitychest.break:
+    description: Lets you break Community Chests
+    default: op
